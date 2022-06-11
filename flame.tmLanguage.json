@@ -1,0 +1,29 @@
+{
+	"name": "Flame",
+	"patterns": [
+		{ "include": "#keywords" },
+		{ "include": "#strings" },
+		{ "include": "#comments" }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.flame",
+				"match": "\\b(nil|if|else|loop|while|until|for|skip|stop|return|is|true|false)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.flame",
+			"begin": "\"",
+			"end": "\""
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.flame",
+				"begin": "#",
+				"end": "$\n?"
+			}]
+		}
+	},
+	"scopeName": "source.flame"
+}

@@ -1,0 +1,38 @@
+{
+    "name": "flame",
+    "displayName": "Flame",
+    "description": "",
+    "version": "0.1.0",
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/FlameLang/vscode-flame"
+    },
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Linters",
+        "Formatters",
+        "Other"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "flame",
+            "icon": {
+                "light": "./icon.svg",
+                "dark": "./icon.svg"
+            },
+            "extensions": [
+                ".fl"
+            ],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "flame",
+            "scopeName": "source.flame",
+            "path": "./flame.tmLanguage.json"
+        }]
+    }
+}
